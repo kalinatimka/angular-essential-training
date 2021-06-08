@@ -7,5 +7,7 @@ import { Component } from '@angular/core';
     './media-item.component.css',
   ]
 })
-export class MediaItemComponent {}
+export class MediaItemComponent {
+  name = 'The Redemption';
+}
 
