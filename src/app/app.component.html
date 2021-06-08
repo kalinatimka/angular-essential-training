@@ -5,5 +5,8 @@
       Keeping track of the media I want to watch
     </p>
   </header>
-  <app-media-item></app-media-item>
+  <app-media-item
+    [mediaItemToWatch]="firstMediaItem"
+    (delete)="onMediaItemDelete($event)"
+  ></app-media-item>
 </section>
