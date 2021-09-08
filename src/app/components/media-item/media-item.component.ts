@@ -11,7 +11,7 @@ export class MediaItemComponent {
 	@Input() mediaItem;
 	@Output() delete = new EventEmitter();
 
-	onDelete() {
+	onDelete(): void {
 		this.delete.emit(this.mediaItem);
 	}
 }
