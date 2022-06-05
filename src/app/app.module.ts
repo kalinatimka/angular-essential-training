@@ -9,12 +9,14 @@ import { FavoriteDirective } from './directives/favorite.directive';
 import { MediaItemFormComponent } from './components/media-item-form/media-item-form.component';
 import { lookupLists, lookupListsToken } from './providers/providers';
 import { MockXHRBackend } from './mock-backend/mock-xhr-backend';
+import { Routing } from './app.routing';
 
 @NgModule({
 	imports: [
 		BrowserModule,
 		ReactiveFormsModule,
 		HttpClientModule,
+		Routing,
 	],
 	declarations: [
 		AppComponent,
